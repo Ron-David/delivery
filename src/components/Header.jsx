@@ -8,7 +8,7 @@ function Header(props) {
     const label = 'משלוחים!'
     return (
         <Container>
-            <Img src='https://o.remove.bg/downloads/3aeecbff-d885-44c8-b697-60f1f0f851bd/Screen_Shot_2021-12-18_at_15.35.49-removebg-preview.png' />
+            <Img src='https://i.ibb.co/gd7w8b8/truck-trsnparent.png' />
             <TextContainer>
                 <S.H1 rtl={true} >{label}</S.H1>
                 <S.SubText rtl={true}>{text}</S.SubText>
