@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
+import { FaTaxi, FaTruck } from 'react-icons/fa'
+import { MdEmojiTransportation, MdLocalTaxi } from 'react-icons/md'
 
 import Header from '../components/Header';
 import TextCard from '../components/TextCard';
@@ -10,6 +12,14 @@ import PhoneNum from '../components/PhoneNum';
 import * as S from '../config/style'
 import Input from '../components/Input';
 import InputForm from '../components/InputForm';
+import MediaText from '../components/MediaText';
+
+const fakeMediaData = {
+    delivery: { title: 'משלוחים', text: 'משלוחים משלוחים משלוחים משלוחים משלוחים משלוחים משלוחים' },
+    taxi: { title: 'מוניות', text: 'מוניות מוניות מוניות מוניות מוניות מוניות מוניות ' },
+    transportation: { title: 'הסעות', text: 'הסעות הסעות הסעות הסעות הסעות הסעות הסעות הסעות ' },
+
+}
 
 function DeliveryPage(props) {
     const label = 'מהירות, אמינות זה אנחנו!'
@@ -26,6 +36,13 @@ function DeliveryPage(props) {
                 <PhoneNum />
                 <ApproveList />
             </PhoneContainer>
+
+            <MediaContainer>
+                <MediaText title={fakeMediaData.taxi.title} text={fakeMediaData.taxi.text} IconComponent={() => <MdLocalTaxi size={28} color={colors.primary} />} />
+                <MediaText title={fakeMediaData.delivery.title} text={fakeMediaData.delivery.text} IconComponent={() => <FaTruck size={30} color={colors.primary} />} />
+                <MediaText title={fakeMediaData.transportation.title} text={fakeMediaData.transportation.text} IconComponent={() => <MdEmojiTransportation size={30} color={colors.primary} />} />
+            </MediaContainer>
+
             <RowContainer>
                 <TextCard />
                 <TextCard />
@@ -40,21 +57,26 @@ const Container = styled.div`
 flex-direction: column;
 background-color: ${colors.light};
 display: flex;
-align-items: center;
 justify-content: center;
 padding-top: 1em;
+
 `;
 
 const TextContainer = styled.p`
   display : flex;
   flex-direction: column;
-  width: 90%;
+  align-self: center;
+  width: 70%;
+  @media (max-width: 1024px)  {
+        width: 80%;
+}
 
 `;
 const RowContainer = styled.div`
 display: flex;
 width: 80%;
 justify-content: space-between;
+align-self: center;
 @media (max-width: 1024px)  {
     align-items: center;
     flex-direction: column;
@@ -69,9 +91,23 @@ flex-direction: row;
 align-items: center;
 justify-items: center;
 justify-content: space-between;
+align-self: center;
+
 
 @media (max-width: 1024px)  {
     margin-bottom: 1em;
+    width: 80%;
+}
+`
+
+const MediaContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 3rem;
+    justify-content: start;
+    width: 85%;
+    @media (max-width: 1024px)  {
+        width: 80%;
 }
 `
 

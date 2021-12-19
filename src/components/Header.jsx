@@ -23,6 +23,8 @@ const Container = styled.div`
     width: 65%;
     padding: 2em 3em;
     justify-items: center;
+    align-self: center;
+
 
     @media (max-width: 1024px)  {
         flex-direction: column;

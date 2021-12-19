@@ -3,7 +3,6 @@ import DeliveryPage from './pages/DeliveryPage';
 import Navbar from './components/Navbar';
 import Input from './components/Input';
 
-
 function App() {
   return (
     <div>
@@ -12,5 +11,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;
