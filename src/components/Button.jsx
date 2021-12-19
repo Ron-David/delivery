@@ -3,9 +3,9 @@ import styled from 'styled-components';
 
 import colors from '../config/colors';
 
-function Button({ label = 'צור קשר!', color = colors.primary, onClick }) {
+function Button({ label = 'צור קשר!', color = colors.primary, shadow, onClick }) {
   return (
-    <Container rtl={true} color={color} onClick={onClick}>{label}</Container >
+    <Container rtl={true} color={color} onClick={onClick} shadow={shadow}>{label}</Container >
   );
 }
 
@@ -19,10 +19,16 @@ const Container = styled.button`
   cursor: pointer;
   border:  solid ;
   font-family: sans-serif;
+  border-width: 0.1em;
   font-weight: bold;
-  margin: 0em 1em;
+  margin: 0.2em 0.1em;
+  box-shadow: 0px 0px ${({ shadow }) => shadow ? shadow : 0}px ${({ shadow }) => shadow ? shadow : 0}px ${colors.lightGrey};
+
 :hover{
     opacity: 0.7;
+    background-color: ${colors.white};
+    color: ${({ color }) => color ? color : colors.primary};
+
 
 }
 

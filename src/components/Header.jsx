@@ -12,7 +12,7 @@ function Header(props) {
             <TextContainer>
                 <S.H1 rtl={true} >{label}</S.H1>
                 <S.SubText rtl={true}>{text}</S.SubText>
-                <Button />
+                <Button shadow={10} />
             </TextContainer>
         </Container>
     );
