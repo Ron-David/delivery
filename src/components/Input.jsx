@@ -34,7 +34,8 @@ align-items: center;
 }
 `
 const RoundedInput = styled.input`
-
+height: 50%;
+width: 90%;
 border: 0px solid ${colors.lightGrey};
 border-radius: 30px;
 outline: 0;
