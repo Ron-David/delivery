@@ -8,6 +8,7 @@ import ApproveList from '../components/ApproveList';
 import Footer from '../components/Footer';
 import PhoneNum from '../components/PhoneNum';
 import * as S from '../config/style'
+import Input from '../components/Input';
 
 function DeliveryPage(props) {
     const label = 'מהירות, אמינות זה אנחנו!'
@@ -29,6 +30,9 @@ function DeliveryPage(props) {
                 <TextCard />
                 <TextCard />
             </RowContainer>
+            <Input />
+            <Input />
+            <Input />
             <Footer />
         </Container >
     );

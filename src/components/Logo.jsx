@@ -25,6 +25,10 @@ const Text = styled.h1`
     font-size: 28px;
     margin: 0px;
     letter-spacing: 5px;
+    @media (max-width: 1024px)  {
+        font-size: 20px;
+
+}
 `;
 const SubText = styled.p`
     direction: ${props => props.rtl ? 'rtl' : ''};
@@ -34,6 +38,10 @@ const SubText = styled.p`
 
     font-size: 10px;
     margin: 0px;
+    @media (max-width: 1024px)  {
+        font-size: 7px;
+
+}
 
 `;
 export default Logo;

@@ -17,6 +17,10 @@ background-color: ${colors.primary};
 display: flex;
 align-items: center;
 justify-content: center;
+@media (max-width: 1024px)  {
+    height: 2em;
+
+}
 `
 const Text = styled.h1`
     direction: ${props => props.rtl ? 'rtl' : ''};

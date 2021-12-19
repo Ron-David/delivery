@@ -19,6 +19,11 @@ padding: 0.5em 5em;
 display: flex;
 align-items: center;
 justify-content: center;
+
+@media (max-width: 1024px)  {
+    padding: 0em 5em;
+
+}
 `;
 
 
