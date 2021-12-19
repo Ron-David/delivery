@@ -50,6 +50,7 @@ const TextContainer = styled.div`
 const Img = styled.img`
 height: 20em;
 width: 30em;
+margin-bottom: 2rem;
 @media (max-width: 1024px)  {
     height: 8em;
     width: 10em;

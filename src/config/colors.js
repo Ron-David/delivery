@@ -8,6 +8,6 @@ export default {
     white: '#ffffff',
     dark: '#3D4146',
     grey: '#8D8E91',
-    lightGrey: '#E6E9EB',
+    lightGrey: '#eee',
     light: '#F7FAFE'
 }

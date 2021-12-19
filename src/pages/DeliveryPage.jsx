@@ -45,7 +45,7 @@ padding-top: 1em;
 const TextContainer = styled.p`
   display : flex;
   flex-direction: column;
-  width: 70%;
+  width: 90%;
 
 `;
 const RowContainer = styled.div`

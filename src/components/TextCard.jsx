@@ -20,12 +20,12 @@ const Container = styled.div`
   border-radius: 10px;
   padding: 1em;
   margin: 2em 1em ;
-  box-shadow: 0px 0px 20px 0px ${colors.grey};
+  box-shadow: 0px 0px 10px 10px ${colors.lightGrey};
 
   @media (max-width: 1024px)  {
     margin: 1em 0.5em ;
-    box-shadow: 0px 0px 5px 0px ${colors.grey};
 }
 `;
+
 
 export default TextCard;
