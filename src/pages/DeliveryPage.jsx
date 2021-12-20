@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import { FaTaxi, FaTruck } from 'react-icons/fa'
+import { FaTruck } from 'react-icons/fa'
 import { MdEmojiTransportation, MdLocalTaxi } from 'react-icons/md'
 
 import Header from '../components/Header';
@@ -10,7 +10,6 @@ import ApproveList from '../components/ApproveList';
 import Footer from '../components/Footer';
 import PhoneNum from '../components/PhoneNum';
 import * as S from '../config/style'
-import Input from '../components/Input';
 import InputForm from '../components/InputForm';
 import MediaText from '../components/MediaText';
 
