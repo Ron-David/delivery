@@ -7,8 +7,8 @@ function TextCard({ label, text }) {
     text = 'הכאב עצמו הוא כאב, הוא אוהב את תהליך השומן העיקרי. הודות ליצרני המערכת הנוכחית, כיצד זה מספק תובנה מסוימת לגבי מה שהם לא מודעים אליו כתוצאה מהדרכה, אלא בזמנים אחרים? וכשהם לא מפקירים אותם לשאת מסרים, אלא מבקרים את הנאמר, לעשות משהו לרצות אותם בכאב הדרוש?'
     return (
         <Container>
-            <S.H1 rtl={true} >{label}</S.H1>
-            <S.SubText rtl={true}>{text}</S.SubText>
+            <S.H1 rtl={true} bold={true}>{label}</S.H1>
+            <S.SubText rtl={true} >{text}</S.SubText>
         </Container>
     );
 }

@@ -10,7 +10,7 @@ function Header(props) {
         <Container>
             <Img src='https://i.ibb.co/gd7w8b8/truck-trsnparent.png' />
             <TextContainer>
-                <S.H1 rtl={true} >{label}</S.H1>
+                <S.H1 rtl={true} bold={true}>{label}</S.H1>
                 <S.SubText rtl={true}>{text}</S.SubText>
                 <Button shadow={10} />
             </TextContainer>
@@ -22,26 +22,21 @@ const Container = styled.div`
     height: 100%;
     width: 65%;
     padding: 2em 3em;
-    justify-items: center;
     align-self: center;
-
 
     @media (max-width: 1024px)  {
         flex-direction: column;
         align-items: center;
-        text-align: center;
         padding: 0em;
 
     }
 `;
 
 const TextContainer = styled.div`
-  width  : 80%;
+  width  : 100%;
   margin-left: 10em;
-  text-align: center;
 
   @media (max-width: 1024px)  {
-    width  : 100%;
     display: flex;
     flex-direction: column;
     align-items: center;

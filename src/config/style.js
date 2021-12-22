@@ -4,7 +4,7 @@ import colors from './colors';
 
 const Text = styled.p`
     direction: ${props => props.rtl ? 'rtl' : ''};
-    color: ${props => props.color ? props.color : colors.black};
+    color: ${({ color }) => color ? color : colors.black};
     font-family: serif;
     font-size: 20px;
     margin: 0em 0.4em;
@@ -17,10 +17,10 @@ const Text = styled.p`
 `;
 
 const H1 = styled.p`
-    direction: ${props => props.rtl ? 'rtl' : ''};
-    color: ${colors.dark};
+    direction: ${({ rtl }) => rtl ? 'rtl' : ''};
+    color: ${({ color }) => color ? color : colors.dark};
     font-family: serif;
-    font-weight: bold;
+    font-weight: ${({ bold }) => bold && 'bold'};
     font-size: 25px;
     margin: 0rem;
     letter-spacing: 1px;
@@ -32,9 +32,9 @@ const H1 = styled.p`
 
 const SubText = styled.p`
     direction: ${props => props.rtl ? 'rtl' : ''};
-    color: ${colors.grey};
+    color: ${({ color }) => color ? color : colors.grey};
     font-family: serif;
-    font-weight: bold;
+    font-weight: ${({ bold }) => bold && 'bold'};
     font-size: 15px;
     letter-spacing: 1px;
 

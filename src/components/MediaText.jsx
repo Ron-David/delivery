@@ -9,7 +9,7 @@ function MediaText({ title, text, IconComponent }) {
         <Container>
             {IconComponent()}
             <TextContainer>
-                <S.H1 rtl={true}>{title}</S.H1>
+                <S.H1 rtl={true} bold={true}>{title}</S.H1>
                 <S.SubText rtl={true}>{text}</S.SubText>
             </TextContainer>
         </Container>

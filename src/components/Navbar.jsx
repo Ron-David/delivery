@@ -45,7 +45,7 @@ const ItemsContainer = styled.div`
   flex-direction: column;
   align-items: center;
   margin: 0 0rem;
-  height: ${({ active }) => active ? 6.8 : 0}rem;
+  height: ${({ active }) => active ? 7 : 0}rem;
   transition: height 1.5s;
 
 
